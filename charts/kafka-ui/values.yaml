@@ -2,10 +2,10 @@ replicaCount: 1
 
 image:
   registry: public.ecr.aws
-  repository: provectus/kafka-ui-custom-build:4083
+  repository: provectus/kafka-ui-custom-build
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "4083"
 
 imagePullSecrets: []
 nameOverride: ""
