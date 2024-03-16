@@ -26,25 +26,25 @@ serviceAccount:
 existingConfigMap: ""
 yamlApplicationConfig:
   # {} 
-  # kafka:
-  #   clusters:
-  #     - name: kafka_logging
-  #       bootstrapServers: 103.52.112.151:9092
-  #       properties_security_protocol: SASL_PLAINTEXT
-  #       properties_sasl_mechanism: SASL_PLAIN
-  #       properties_sasl_jaas_config: 'org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="ftVS7tSMgQLL";'
+  kafka:
+    clusters:
+      - name: kafka_logging
+        bootstrapServers: 103.52.112.151:9092
+        properties_security_protocol: SASL_PLAINTEXT
+        properties_sasl_mechanism: SASL_PLAIN
+        properties_sasl_jaas_config: 'org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="ftVS7tSMgQLL";'
 
   
   # # kafka:
   # #   clusters:
   # #     - name: yaml
   # #       bootstrapServers: kafka-service:9092
-  spring:
-    security:
-      user_name: admin
-      user_password: datpt72
-  auth:
-    type: LOGIN_FORM
+  # spring:
+  #   security:
+  #     user_name: admin
+  #     user_password: datpt72
+  # auth:
+  #   type: LOGIN_FORM
 
   # management:
   #   health:
