@@ -25,8 +25,12 @@ yamlApplicationConfig:
   # {} 
   kafka:
     clusters:
-      - name: kafka-stg
+      - name: kafka_logging
         bootstrapServers: 103.52.112.151:9092
+        properties_security_protocol: SASL_PLAINTEXT
+        properties_sasl_mechanism: SASL_PLAIN
+        properties_sasl_jaas_config: 'org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="ftVS7tSMgQLL";'
+
   
   # kafka:
   #   clusters:
@@ -35,8 +39,8 @@ yamlApplicationConfig:
   # spring:
   #   security:
   #     oauth2:
-  auth:
-    type: LOGIN_FORM
+  # auth:
+  #   type: LOGIN_FORM
 
   # management:
   #   health:
