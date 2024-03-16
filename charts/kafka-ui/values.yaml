@@ -36,9 +36,10 @@ yamlApplicationConfig:
   #   clusters:
   #     - name: yaml
   #       bootstrapServers: kafka-service:9092
-  # spring:
-  #   security:
-  #     oauth2:
+  spring:
+    security:
+      user_name: admin
+      user_password: datpt72
   # auth:
   #   type: LOGIN_FORM
 
