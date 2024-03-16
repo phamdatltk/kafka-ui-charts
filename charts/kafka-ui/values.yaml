@@ -22,11 +22,11 @@ serviceAccount:
 
 existingConfigMap: ""
 yamlApplicationConfig:
-  {} 
-  # kafka:
-  #   clusters:
-  #     - name: kafka-stg
-  #       bootstrapServers: 103.52.112.151:9092
+  # {} 
+  kafka:
+    clusters:
+      - name: kafka-stg
+        bootstrapServers: 103.52.112.151:9092
   
   # kafka:
   #   clusters:
@@ -35,8 +35,9 @@ yamlApplicationConfig:
   # spring:
   #   security:
   #     oauth2:
-  # auth:
-  #   type: disabled
+  auth:
+    type: LOGIN_FORM
+
   # management:
   #   health:
   #     ldap:
