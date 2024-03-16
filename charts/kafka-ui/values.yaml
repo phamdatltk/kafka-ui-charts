@@ -47,9 +47,9 @@ yamlApplicationConfig:
   #   health:
   #     ldap:
   #       enabled: false
-yamlApplicationConfigConfigMap:
-  keyName: config.yml
-  name: configMapName
+yamlApplicationConfigConfigMap: {}
+  # keyName: config.yml
+  # name: configMapName
 existingSecret: ""
 envs:
   secret: {}
