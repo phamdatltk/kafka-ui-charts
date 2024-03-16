@@ -22,7 +22,7 @@ serviceAccount:
 
 existingConfigMap: ""
 yamlApplicationConfig:
-{} 
+  {} 
   # kafka:
   #   clusters:
   #     - name: kafka-stg
@@ -41,8 +41,7 @@ yamlApplicationConfig:
   #   health:
   #     ldap:
   #       enabled: false
-yamlApplicationConfigConfigMap:
-  {}
+yamlApplicationConfigConfigMap: {}
   # keyName: config.yml
   # name: configMapName
 existingSecret: ""
