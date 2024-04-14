@@ -32,7 +32,7 @@ yamlApplicationConfig:
         bootstrapServers: 103.52.112.151:9092
         properties_security_protocol: SASL_PLAINTEXT
         properties_sasl_mechanism: SASL_PLAIN
-        properties_sasl_jaas_config: 'org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="ftVS7tSMgQLL";'
+        # properties_sasl_jaas_config: 'org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="ftVS7tSMgQLL";'
 
   
   # # kafka:
@@ -137,9 +137,8 @@ ingress:
   # configs for Ingress TLS
   tls:
     # Enable TLS termination for the Ingress
-    # enabled: true
+    enabled: true
     # the name of a pre-created Secret containing a TLS private key and certificate
-    # hosts: demo-apache-nifi-dpaas.iotpez.com
     secretName: "demo-apache-nifi-dpaas.iotpez.com-tls-secret"
 
   # HTTP paths to add to the Ingress before the default path
