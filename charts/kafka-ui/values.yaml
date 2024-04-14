@@ -137,7 +137,7 @@ ingress:
   # configs for Ingress TLS
   tls:
     # Enable TLS termination for the Ingress
-    enabled: false
+    enabled: true
     # the name of a pre-created Secret containing a TLS private key and certificate
     secretName: "demo-apache-nifi-dpaas.iotpez.com-tls-secret"
 
